@@ -4,10 +4,7 @@ This repository includes plugins for configuring packages using Devbox.
 
 ## Available Plugins
 
-* Go Monorepo (experimental)
-* MongoDB
-* RabbitMQ
-* NATS Server
+* CouchDB
 
 ## How to Use
 
@@ -15,6 +12,6 @@ Each subfolder contains a plugin for a specific package. To use a plugin, add th
 
 ```json
 "include": [
-    "github:jetpack-io/devbox-plugins?dir=<plugin-name>"
+    "github:forkprince/devbox-plugins?dir=<plugin-name>"
 ],
 ```

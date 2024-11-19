@@ -1,0 +1,17 @@
+{
+  "name": "couchdb",
+  "version": "0.0.1",
+  "readme": "Plugin for the [`couchdb3`](https://www.nixhub.io/packages/couchdb3) package. This plugin configures CouchDB to run on the same machine as Devbox.",
+  "package": "couchdb3@latest",
+  "env": {
+    "COUCHDB_CONFIG": "{{.DevboxDir}}/couchdb.ini",
+    "COUCHDB_DATABASE_DIR": "{{.Virtenv}}/data",
+    "COUCHDB_VIEW_INDEX_DIR": "{{.Virtenv}}/view"
+  },
+  "create_files": {
+    "{{.Virtenv}}/data": "",
+    "{{.Virtenv}}/view": "",
+    "{{.Virtenv}}/process-compose.yaml": "config/process-compose.yaml",
+    "{{.DevboxDir}}/couchdb.ini": "config/couchdb.ini"
+  }
+}

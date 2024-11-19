@@ -1,0 +1,8 @@
+version: "0.5"
+
+processes:
+  couchdb:
+    command: "couchdb -couch_ini $COUCHDB_CONFIG"
+    availability:
+      restart: on_failure
+      max_restarts: 5
