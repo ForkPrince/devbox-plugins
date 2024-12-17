@@ -1,4 +1,4 @@
-# MongoDB Plugin
+# CouchDB Plugin
 
 Plugin for the [`couchdb3`](https://www.nixhub.io/packages/couchdb3) package. This plugin configures CouchDB to run on the same machine as Devbox.
 
